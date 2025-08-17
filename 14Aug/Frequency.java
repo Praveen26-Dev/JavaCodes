@@ -5,10 +5,9 @@ public class Frequency{
         for(int i=0;i<arr.length;i++){
 
             int count=1;
-            boolean duplicate = false;
             for(int j=i+1;j<arr.length;j++){
                 if(arr[i]==arr[j]&&arr[i]!=-1){
-                    duplicate=true;
+                    
                     ++count;
                     arr[j]=-1;
                 }
