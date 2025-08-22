@@ -5,7 +5,7 @@ public class PrimeNum{
         for(int i=1;i<=20;++i){
             if(no%i==0){
                 ++count;
-                System.out.println(count);
+                // System.out.println(i);
             }
         }
         if(count==2){
