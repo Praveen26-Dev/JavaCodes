@@ -1,15 +1,18 @@
 import java.util.*;
 public class LCM{
     public static void main(String ags[]){
-        int n1=9;
-        int n2=7;
-        int lcm=0;
-        for(int i=n1;;i+=n1){
-            if(i%n1==0&&i%n2==0){
-                lcm =i;
+      Scanner sc = new Scanner(System.in);
+      int n1 =sc.nextInt();
+      int n2 =sc.nextInt();
+        int max= (n1>n2)?n1:n2;
+        while(true){
+            if(max%n1==0&&max%n2==0){
+                System.out.println(max);
                 break;
-            }
+         }
+         max++;
         }
-        System.out.println(lcm);
+        // lcm++;
+        // System.out.println(lcm);
     }
 }
