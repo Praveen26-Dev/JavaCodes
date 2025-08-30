@@ -7,15 +7,17 @@
 import java.util.*;
 public class Constructor{
     public static void main(String args[]){
-    Student s = new Student(102);
+    Student s = new Student();
     Student s1 = new Student(s);
+    // s.roll = 105;
+    System.out.println(s1.roll);
     }
 }
 
 class Student{
     int roll;
-    Student(int roll){
-        this.roll = roll;
+    Student(){
+        this.roll = 103;
         System.out.println("Parametrized --> Your Name is Rahul and roll no "+roll);
     }
     Student(Student obj){
