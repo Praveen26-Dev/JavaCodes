@@ -1,15 +1,16 @@
-public class Constructor2{
+public class ShallowCopy{
  public static void main(String args[]){
-    Student s =new Student();
-    s.show();
+    // Student s =new Student();
+    // s.show();
 
     Student s1 = new Student("Raaju",23);
     s1.show();
     Student s2 = new Student(s1);
     s2.show();
-    s1.age=25;
+    s1.age = 25;
+    s1.name ="Pappu";
+    
     s1.show();
-    s2.age=29;
     s2.show();
  }
 }
@@ -17,10 +18,10 @@ public class Constructor2{
 class Student{
     String name;
     int age;
-    Student(){
-        this.name = "Rahul";
-        this.age = 20;
-        }
+    // Student(){
+    //     this.name = "Rahul";
+    //     this.age = 20;
+    //     }
     Student(String name,int age){
      this.name = name;
      this.age = age;
