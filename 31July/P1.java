@@ -6,7 +6,7 @@ public class P1{
             for(int c=1;c<=5;c++)
             {
              if(c<=r){
-                System.out.print('*');
+                System.out.print("*");
              }
              else System.out.print(" ");
             }

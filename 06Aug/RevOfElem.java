@@ -5,7 +5,8 @@ public class RevOfElem{
     public static void main(String args[]){
         int a[] = {1,2,3,31,76,90};
         int first=0,last=a.length-1;
-        for(int i =0;i<=a.length/2;i++){
+        while(first<last);
+        {
           int temp = a[last];
           a[last] = a[first];
           a[first] = temp;
