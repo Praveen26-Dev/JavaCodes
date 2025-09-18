@@ -5,7 +5,7 @@ public class P1{
         {
             for(int c=1;c<=5;c++)
             {
-             if(c<=r){
+             if(c<=6-r){
                 System.out.print("*");
              }
              else System.out.print(" ");

@@ -21,7 +21,7 @@ class UseOfThrow{
         try{  
              obj.Ae(100,0);
         }
-        catch(ArithException e){
+        catch(ArithExcep tion e){
             System.out.println(e);
         }
     }
