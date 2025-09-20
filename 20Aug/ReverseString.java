@@ -4,7 +4,7 @@ public class ReverseString{
         String str="Hello";
         char arr[]=str.toCharArray();
         int first=0;
-        int last=str.length()-1;
+        int last=arr.length-1;
         while(first<last){
           char temp = arr[first];
           arr[first] = arr[last];

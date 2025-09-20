@@ -8,7 +8,7 @@ class ArithException extends RuntimeException
 
 class UseOfThrow{
 
-    void Ae(int a,int b) throws ArithException{
+    void Ae(int a,int b)throws Exception{
         if(b==0){
             throw new ArithException("Divide by zero is not possible");
         }
@@ -21,7 +21,7 @@ class UseOfThrow{
         try{  
              obj.Ae(100,0);
         }
-        catch(ArithExcep tion e){
+        catch(Exception e){
             System.out.println(e);
         }
     }
