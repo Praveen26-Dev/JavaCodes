@@ -1,11 +1,11 @@
 class CheckException extends Exception{
-    CheckException(String msg){
+    CheckException(String msg){ 
         super(msg);
     }
 }
 
 class Check{
-    void checkOdd(int num){
+    void checkOdd(int num) throws Exception{
         if(num%2==1){
             throw new CheckException("Odd number");
         }else{
@@ -20,7 +20,7 @@ class OddNum{
         try{
             c.checkOdd(15);
         }
-        catch(CheckException e){
+        catch(Exception e){
             System.out.println(e);
         }
     }
